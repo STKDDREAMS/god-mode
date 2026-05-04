@@ -462,7 +462,7 @@ async function searchFood(){
   document.getElementById('ai-result').classList.remove('visible');
   try{
     const url='https://api.calorieninjas.com/v1/nutrition?query='+encodeURIComponent(q);
-    const resp=await fetch(url,{headers:{'X-Api-Key':'YOUR_API_KEY_HERE'}});
+    const resp=await fetch(url,{headers:{'X-Api-Key':'Q3dnxrZhIqG+BBf52/tHSA==JDNz4GfZTAlEOHqH'}});
     const data=await resp.json();
     const items=data.items||[];
     if(!items.length){toast('No results. Try a different name.');btn.disabled=false;btn.textContent='Search';return;}
